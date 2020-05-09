@@ -1,2 +1,2 @@
 # regex-parser
-SImple regex parser with Rust
+SImple regex parser with Go
