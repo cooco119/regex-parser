@@ -36,3 +36,11 @@ func TestMatcherShouldMatchSingleDot(t *testing.T) {
 	result = matcher.Match(text, pattern)
 	assert.Equal(t, text, result)
 }
+
+func TestMatcherShouldFailForDiffrentLength(t *testing.T) {
+	text := "abcd"
+	pattern := "abcde"
+	result := matcher.Match(text, pattern)
+
+	assert.Equal(t, "", result)
+}
